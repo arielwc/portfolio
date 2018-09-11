@@ -18,23 +18,22 @@ h1 {
     margin: 0;
 }
 
+.photo {
+    width: 300px;
+    float: right;
+}
+
 .container {
     width: 60%;
-    height: 400px;
-
-    border: solid black 1px;
+    margin: auto;
     overflow: auto;
 }
 
-.photo {
-    overflow: auto;
-    width: 25%;
+.speel {
+    text-align: left;
+    width: 500px;
     float: left;
-    height: 15px;
-    padding: 15px;
 }
-
-
 .links {
     width: 25%;
     height: 40%;
@@ -74,6 +73,7 @@ li{
 
 }
 .two {
+    overflow: auto;
     background: pink;
 
 }
