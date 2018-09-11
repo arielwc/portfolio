@@ -1,0 +1,11 @@
+.productimg {
+    float: left;
+    width: 25%;
+    height: 50%;
+    padding: 15px;
+}
+
+nav {
+    height: 4%;
+    width: 100%;
+}
