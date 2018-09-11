@@ -4,11 +4,12 @@
 }
 
 body {
-    margin:0;
+    margin: 0;
+    overflow: auto;
 }
 
 .logo {
-    height: 5%;
+    height: 50%;
     width: 10%;
     display: block;
 }
@@ -18,9 +19,9 @@ body {
     height: 10%;
     padding: 15px;
 }
-
 .width {
     width: 100%;
+
 }
 .alignment {
     margin-left: auto;
@@ -30,36 +31,42 @@ body {
 
 nav {
     position: sticky;
-    height: 4%;
     background: paleturquoise;
+    height: 15%;
 }
 
 ul{
     list-style-type: none;
     text-align: center;
+    padding: 1% 0% 0% 0%;
 }
 li{
     display: inline;
+    padding: 0% 10% 0% 10%;
 }
 
 .one {
     height: 30%;
+    overflow: auto;
+    background: palegreen;
+
 }
 .two {
     height: 20%;
+    background: pink;
+
 }
 .three {
     height: 30%;
+    background: plum;
 }
 .four {
     height: 15%;
+    background: papayawhip;
 }
 
 .container {
-    margin: 10%;
-    height: 60%;
-    width: 80%;
-    overflow: auto;
+    background: cornflowerblue;
 }
 
 footer {
