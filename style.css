@@ -1,40 +1,27 @@
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    overflow: auto;
-}
-
-.logo {
-    height: 50%;
-    width: 10%;
-    display: block;
-    border: solid black 1px;
 }
 
 h1 {
     margin: 0;
 }
 
-#one {
-    border-top: solid black 1px;
+#home-content img {
+    height: 50%;
+    width: 10%;
+    display: block;
+}
+
+#about-me {
     overflow: auto;
 }
 
-#two {
-    border-top: solid black 1px;
-    overflow: auto;
+#portfolio {
+
 }
 
-#three {
-    border-top: solid black 1px;
-}
+#Contact {
 
-#four {
-    border-top: solid black 1px;
 }
 
 nav {
@@ -50,6 +37,7 @@ ul{
     text-align: center;
     padding: 1% 0% 0% 0%;
 }
+
 li {
     display: inline;
     padding: 0% 5% 0% 5%;
@@ -57,44 +45,37 @@ li {
 
 .container {
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     overflow: auto;
-    border: solid black 1px;
 }
 
 .about-me-text {
     text-align: left;
-    width: 500px;
+    width: 50%;
     float: left;
-    border: solid black 1px;
     word-wrap: break-word;
 }
 
 .photo {
     width: 200px;
     float: right;
-    border: solid black 1px;
 }
 
 .links {
-    width: 25%;
-    height: 40%;
     padding: 15px;
-    border: solid black 1px;
+    width: 25%;
 }
 
-.width {
+.background-width {
     width: 100%;
 }
 
 .alignment {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
 footer {
-    border-top: solid black 1px;
     height: 5%;
 }
 
