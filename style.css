@@ -19,21 +19,21 @@ h1 {
     margin: 0;
 }
 
-.one {
+#one {
     border-top: solid black 1px;
     overflow: auto;
 }
 
-.two {
+#two {
     border-top: solid black 1px;
     overflow: auto;
 }
 
-.three {
+#three {
     border-top: solid black 1px;
 }
 
-.four {
+#four {
     border-top: solid black 1px;
 }
 
@@ -41,7 +41,7 @@ nav {
     position: fixed;
     top: 0;
     background: paleturquoise;
-    height: 20%;
+    height: 8%;
     opacity: 0.5;
 }
 
@@ -52,7 +52,7 @@ ul{
 }
 li {
     display: inline;
-    padding: 0% 10% 0% 10%;
+    padding: 0% 5% 0% 5%;
 }
 
 .container {
@@ -108,7 +108,6 @@ footer {
 
     .hamburger {
         display: block;
-
         width: 35px;
         height: 5px;
         background-color: black;
