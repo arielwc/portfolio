@@ -48,16 +48,16 @@ li {
     overflow: auto;
 }
 
+.container img {
+    width: 200px;
+    float: right;
+}
+
 .about-me-text {
     text-align: left;
     width: 50%;
     float: left;
     word-wrap: break-word;
-}
-
-.photo {
-    width: 200px;
-    float: right;
 }
 
 .links {
