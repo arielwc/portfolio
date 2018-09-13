@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+#home-content img {
+    height: 50%;
+    width: 10%;
+    display: block;
+}
+
+#about-me {
+    overflow: auto;
+}
+
+#portfolio {
+
+}
+
+#Contact {
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: paleturquoise;
+    height: 70px;
+    opacity: 0.5;
+}
+
+ul {
+    text-align: center;
+    padding: 1% 0% 0% 0%;
+}
+
+li {
+    display: inline;
+    padding: 0% 5% 0% 5%;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.container img {
+    width: 200px;
+    float: right;
+}
+
+.about-me-text {
+    text-align: left;
+    width: 50%;
+    float: left;
+    word-wrap: break-word;
+}
+
+.links {
+    padding: 15px;
+    width: 25%;
+}
+
+.background-width {
+    width: 100%;
+}
+
+.alignment {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    height: 5%;
+}
+
+.hamburger {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 8px 0px 0px 10px;
+    }
+
+}
