@@ -3,25 +3,53 @@ body {
 }
 
 h1 {
-    margin: 0;
+    font-family: monospace;
+    font-size: 2em;
+
 }
 
-#home-content img {
-    height: 50%;
-    width: 10%;
-    display: block;
+#home-content {
+    background-image: url("background.jpeg");
+
+    img {
+        height: 100px;
+        width: 25%;
+        display: block;
+        z-index: 1;
+    }
+
 }
 
 #about-me {
     overflow: auto;
+    background-image: url("background.jpeg");
+}
+
+#about-me img {
+    filter: grayscale(100%);
+    height: 200px;
+    width: 30%;
+    display: block;
+    z-index: -1;
 }
 
 #portfolio {
+    background-image: url("background.jpeg");
+
+h1 {
+    margin: 0 auto;
+}
+
+img {
+    padding: 15px;
+    width: 25%;
+    height: 250px;
+}
 
 }
 
 #Contact {
-
+    background-image: url("background.jpeg");
 }
 
 nav {
@@ -43,7 +71,7 @@ li {
 }
 
 .container {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     overflow: auto;
 }
@@ -56,14 +84,12 @@ li {
 .about-me-text {
     text-align: left;
     width: 50%;
+    height: 100px;
     float: left;
     word-wrap: break-word;
+    font-family: Monospace;
 }
 
-.links {
-    padding: 15px;
-    width: 25%;
-}
 
 .background-width {
     width: 100%;
