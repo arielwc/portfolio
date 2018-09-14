@@ -5,19 +5,20 @@ body {
 h1 {
     font-family: monospace;
     font-size: 2em;
+    margin: 0;
 
 }
 
 #home-content {
     background-image: url("background.jpeg");
-
-    img {
-        height: 100px;
-        width: 25%;
-        display: block;
-        z-index: 1;
-    }
-
+    margin: 0 auto;
+    overflow: auto;
+}
+.beach-banner {
+    background-image: url("beach-banner.jpg");
+    background-size: cover;
+    height: 800px;
+    width:100%;
 }
 
 #about-me {
@@ -35,6 +36,8 @@ h1 {
 
 #portfolio {
     background-image: url("background.jpeg");
+    overflow: auto;
+    position: center;
 
 h1 {
     margin: 0 auto;
@@ -48,6 +51,18 @@ img {
 
 }
 
+.card {
+    padding: 20px;
+    width: 30%;
+    float: right;
+}
+
+.project-image {
+    background-image: url("Placeholder-Flowers.jpg");
+    background-size: cover;
+    height: 300px;
+}
+
 #Contact {
     background-image: url("background.jpeg");
 }
@@ -56,12 +71,13 @@ nav {
     position: fixed;
     top: 0;
     background: paleturquoise;
-    height: 70px;
+    height: 92px;
     opacity: 0.5;
 }
 
 ul {
     text-align: center;
+    font-family: Monospace;
     padding: 1% 0% 0% 0%;
 }
 
@@ -107,6 +123,7 @@ footer {
 .hamburger {
     display: none;
 }
+
 @media only screen and (max-width: 600px) {
     ul {
         display: none;
@@ -120,4 +137,14 @@ footer {
         margin: 8px 0px 0px 10px;
     }
 
+}
+
+@media screen and (max-width: 600px){
+    #portfolio{
+        width: 600px;
+    }
+    .card {
+        width: 90%;
+        position: center;
+    }
 }
