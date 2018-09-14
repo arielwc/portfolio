@@ -15,7 +15,7 @@ h1 {
     overflow: auto;
 }
 .beach-banner {
-    background-image: url("beach-banner.jpg");
+    background-image: url("Beach-banner.jpg");
     background-size: cover;
     height: 800px;
     width:100%;
