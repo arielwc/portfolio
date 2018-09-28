@@ -1,70 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
 
-h1 {
+p {
     font-family: monospace;
     font-size: 2em;
-    margin: 0;
+    margin-top: 0;
 
+}
+
+#home-content img {
+    height: 100px;
+    width: 25%;
+    display: block;
 }
 
 #home-content {
-    background-image: url("background.jpeg");
-    margin: 0 auto;
-    overflow: auto;
-}
-.beach-banner {
     background-image: url("Beach-banner.jpg");
     background-size: cover;
     height: 800px;
-    width:100%;
-}
+    color: white;
+    text-align: center;
+    font-family: monospace;
 
-#about-me {
-    overflow: auto;
-    background-image: url("background.jpeg");
-}
-
-#about-me img {
-    filter: grayscale(100%);
-    height: 200px;
-    width: 30%;
-    display: block;
-    z-index: -1;
-    }
-
-#portfolio {
-    background-image: url("background.jpeg");
-    overflow: auto;
-    position: center;
-
-h1 {
-    margin: 0 auto;
-}
-
-img {
-    padding: 15px;
-    width: 25%;
-    height: 250px;
-}
-
-}
-
-.card {
-    padding: 20px;
-    width: 30%;
-    float: right;
-}
-
-.project-image {
-    background-image: url("Placeholder-Flowers.jpg");
-    background-size: cover;
-    height: 300px;
-}
-
-#Contact {
-    background-image: url("background.jpeg");
 }
 
 nav {
@@ -73,11 +35,12 @@ nav {
     background: paleturquoise;
     height: 92px;
     opacity: 0.5;
+    z-index: 1;
 }
 
 ul {
+    font-family: monospace;
     text-align: center;
-    font-family: Monospace;
     padding: 1% 0% 0% 0%;
 }
 
@@ -85,27 +48,6 @@ li {
     display: inline;
     padding: 0% 5% 0% 5%;
 }
-
-.container {
-    width: 40%;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.container img {
-    width: 200px;
-    float: right;
-}
-
-.about-me-text {
-    text-align: left;
-    width: 50%;
-    height: 100px;
-    float: left;
-    word-wrap: break-word;
-    font-family: Monospace;
-}
-
 
 .background-width {
     width: 100%;
@@ -116,14 +58,9 @@ li {
     text-align: center;
 }
 
-footer {
-    height: 5%;
-}
-
 .hamburger {
     display: none;
 }
-
 @media only screen and (max-width: 600px) {
     ul {
         display: none;
@@ -139,12 +76,91 @@ footer {
 
 }
 
-@media screen and (max-width: 600px){
-    #portfolio{
-        width: 600px;
+#about-me {
+    overflow: auto;
+    background-image: url("background.jpeg");
+    height: 420px;
+    padding: 70px 0;
+}
+
+#about-me img {
+    filter: grayscale(100%);
+    height: 200px;
+    width: 150px;
+    display: block;
+
+}
+
+#portfolio {
+    background-image: url("background.jpeg");
+}
+
+#portfolio h1 {
+    margin: 0 auto;
+}
+
+#portfolio img {
+    padding: 15px;
+    width: 25%;
+    height: 250px;
+}
+
+#Contact {
+    background-image: url("background.jpeg");
+}
+
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+.container img {
+    width: 200px;
+    float: right;
+}
+
+.container-text {
+    text-align: left;
+    width: 100%;
+    height: 100px;
+    float: left;
+    word-wrap: break-word;
+    font-family: Monospace;
+}
+
+
+.card {
+    float: left;
+    width: 50%;
+}
+
+
+footer {
+    height: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        display: none;
     }
+
+    .hamburger {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 8px 0px 0px 10px;
+    }
+
+    .container {
+        width: 500px;
+    }
+
     .card {
-        width: 90%;
-        position: center;
+        width: 100%;
     }
+
 }
