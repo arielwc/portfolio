@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.41)
 # Database: portfoliodb
-# Generation Time: 2018-10-01 08:52:53 +0000
+# Generation Time: 2018-10-01 09:43:25 +0000
 # ************************************************************
 
 
@@ -18,6 +18,51 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+# Dump of table about_me
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `about_me`;
+
+CREATE TABLE `about_me` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `about me text` text,
+  `about me image` char(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+# Dump of table contact_info
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `contact_info`;
+
+CREATE TABLE `contact_info` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL,
+  `phone number` int(20) NOT NULL,
+  `email address` text NOT NULL,
+  `Other` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+# Dump of table Home
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `Home`;
+
+CREATE TABLE `Home` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `background image` char(50) DEFAULT NULL,
+  `title text` char(100) DEFAULT NULL,
+  `logo` char(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 
 # Dump of table portfolio
