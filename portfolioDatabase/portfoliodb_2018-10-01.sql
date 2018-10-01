@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.6.41)
 # Database: portfoliodb
-# Generation Time: 2018-10-01 09:43:25 +0000
+# Generation Time: 2018-10-01 10:06:59 +0000
 # ************************************************************
 
 
@@ -27,8 +27,8 @@ DROP TABLE IF EXISTS `about_me`;
 
 CREATE TABLE `about_me` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `about me text` text,
-  `about me image` char(11) DEFAULT NULL,
+  `text` varchar(1000) DEFAULT '',
+  `image` varchar(1000) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -41,25 +41,25 @@ DROP TABLE IF EXISTS `contact_info`;
 
 CREATE TABLE `contact_info` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `name` text NOT NULL,
-  `phone number` int(20) NOT NULL,
-  `email address` text NOT NULL,
-  `Other` text,
+  `name` varchar(100) NOT NULL DEFAULT '',
+  `phone_number` varchar(30) DEFAULT NULL,
+  `email_address` varchar(100) DEFAULT '',
+  `other` varchar(100) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 
-# Dump of table Home
+# Dump of table home
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `Home`;
+DROP TABLE IF EXISTS `home`;
 
-CREATE TABLE `Home` (
+CREATE TABLE `home` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `background image` char(50) DEFAULT NULL,
-  `title text` char(100) DEFAULT NULL,
-  `logo` char(50) DEFAULT NULL,
+  `background_image` varchar(50) DEFAULT NULL,
+  `title_text` varchar(100) DEFAULT NULL,
+  `logo` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -72,9 +72,9 @@ DROP TABLE IF EXISTS `portfolio`;
 
 CREATE TABLE `portfolio` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `project title` text,
-  `image` char(50) DEFAULT NULL,
-  `url` char(50) DEFAULT NULL,
+  `project_title` varchar(100) DEFAULT '',
+  `image` varchar(100) DEFAULT NULL,
+  `url` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
