@@ -58,7 +58,7 @@ require 'database_post.php';
         <div class="container-text">
             Ariel Walker-Cochrane<br>
             (p)+44 7 849684769<br>
-        (e)arielwalkercochrane@gmail.com
+            (e)arielwalkercochrane@gmail.com
         </div>
     </div>
 </section>
