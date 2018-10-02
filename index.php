@@ -29,8 +29,8 @@
     <div class="container">
         <div class="card">
             <div class="container-text">
-                I am Ariel Walker-Cochrane, I am a 31 year old human from Katikati, New Zealand.
-                I am currently training to be a software programmer at Mayden Academy in Bath, England.
+
+
             </div>
         </div>
         <div class="card">
@@ -54,7 +54,7 @@
         <p>Contact Info</p>
         <div class="container-text">
             Ariel Walker-Cochrane<br>
-        (p)+44 7 849684769<br>
+            (p)+44 7 849684769<br>
         (e)arielwalkercochrane@gmail.com
         </div>
     </div>
