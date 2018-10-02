@@ -1,4 +1,7 @@
-<!DOCTYPE HTML>
+<?php
+require 'database_post.php';
+?>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -22,6 +25,7 @@
     </nav>
     <h1>Ariel Walker-Cochrane</h1>
     <h4>Trainee Software Programmer</h4>
+
 </section>
 
 <section id="about-me" class="background-width alignment">
@@ -29,8 +33,7 @@
     <div class="container">
         <div class="card">
             <div class="container-text">
-
-
+                <?php echo $result["text"]; ?>
             </div>
         </div>
         <div class="card">
