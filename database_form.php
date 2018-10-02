@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: academy
- * Date: 01/10/2018
- * Time: 14:38
- */
+
+<html>
+<form action="require_file.php" method="POST">
+    About Me<br>
+    Text:<br>
+    <input type="text" name="text" /><br>
+    <input type="submit" />
+</form>
+
+</html>
