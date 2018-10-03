@@ -1,5 +1,8 @@
 <?php
-require 'database_post.php';
+
+require_once 'get_about_me.php';
+
+
 ?>
 
 <html lang="en">
@@ -33,7 +36,7 @@ require 'database_post.php';
     <div class="container">
         <div class="card">
             <div class="container-text">
-                <?php echo $result["text"]; ?>
+<!--                --><?php echo $aboutMeContent; ?>
             </div>
         </div>
         <div class="card">

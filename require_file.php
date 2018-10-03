@@ -1,11 +1,15 @@
 <?php
+require_once 'db.php';
+require_once 'functions.php';
 
-$db = new PDO('mysql:host=127.0.0.1;dbname=portfoliodb','root');
+$db = dbConn();
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
-$aboutme_text = $_POST['text'];
+$about_me_text = $_POST['text'];
 
-$query = $db->prepare("UPDATE `about_me` SET `text`=:text WHERE `id`=1");
+updateAboutme($db, $about_me_text);
+header('Location:index.php');
 
-$query->bindParam(':text' , $aboutme_text);
 
-$query->execute()
+
+
