@@ -37,7 +37,7 @@ require 'database_post.php';
             </div>
         </div>
         <div class="card">
-            <img src="Picture-of-my-face.jpg">
+            <?php echo $result["image"]; ?>
         </div>
     </div>
 </section>
