@@ -1,7 +1,7 @@
 <?php
 
 require_once 'get_about_me.php';
-
+require_once 'get_portfolio.php';
 
 ?>
 
@@ -47,12 +47,11 @@ require_once 'get_about_me.php';
 
 <section id="portfolio" class="background-width alignment">
     <p>Portfolio</p>
-    <img src="Placeholder-Flowers.jpg">
-    <img src="Placeholder-Flowers.jpg">
-    <img src="Placeholder-Flowers.jpg">
-    <img src="Placeholder-Flowers.jpg">
-    <img src="Placeholder-Flowers.jpg">
-    <img src="Placeholder-Flowers.jpg">
+<!--    --><?php
+    foreach ($portfolioResults as $project) {
+        echo '<img src="' . $project['image'] . '">';
+    }
+     ?>
 </section>
 
 <section id="Contact" class="background-width alignment">
@@ -68,6 +67,7 @@ require_once 'get_about_me.php';
 
 </body>
 
-<footer>&copy; Ariel Walker-Cochrane</footer>
+<footer>&copy; Ariel Walker-Cochrane <a href="database_form.php">Login</a>
+</footer>
 
 </html>
