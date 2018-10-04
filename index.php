@@ -1,4 +1,10 @@
-<!DOCTYPE HTML>
+<?php
+
+require_once 'get_about_me.php';
+
+
+?>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -22,6 +28,7 @@
     </nav>
     <h1>Ariel Walker-Cochrane</h1>
     <h4>Trainee Software Programmer</h4>
+
 </section>
 
 <section id="about-me" class="background-width alignment">
@@ -29,8 +36,7 @@
     <div class="container">
         <div class="card">
             <div class="container-text">
-                I am Ariel Walker-Cochrane, I am a 31 year old human from Katikati, New Zealand.
-                I am currently training to be a software programmer at Mayden Academy in Bath, England.
+<!--                --><?php echo $aboutMeContent; ?>
             </div>
         </div>
         <div class="card">
@@ -54,8 +60,8 @@
         <p>Contact Info</p>
         <div class="container-text">
             Ariel Walker-Cochrane<br>
-        (p)+44 7 849684769<br>
-        (e)arielwalkercochrane@gmail.com
+            (p)+44 7 849684769<br>
+            (e)arielwalkercochrane@gmail.com
         </div>
     </div>
 </section>
