@@ -9,7 +9,7 @@
 <br>
 <br>
 <h1>Portfolio</h1>
-<form action="require_file.php" method="POST">
+<form action="create_portfolio.php" method="POST">
 <h3>Add A New Project</h3><br>
 Project Title<br>
 
@@ -23,6 +23,14 @@ URL<br>
     <input type="submit" />
 
     </form>
+
+<form action="delete_portfolio.php" method="POST">
+    <h3>Delete A Project</h3><br>
+    Project Title<br>
+    <input type="text" name="project_title" /><br>
+    <input type="submit" />
+
+</form>
 
 
 </form>

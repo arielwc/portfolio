@@ -6,8 +6,8 @@ $db = dbConn();
 $aboutMeResults = getAboutme($db);
 $aboutMeContent = getContentFromArrayWithKey("text", $aboutMeResults);
 
-
-
+$db = dbConn();
+$portfolioResults = getProjects($db);
 
 
 

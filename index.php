@@ -1,12 +1,16 @@
 <?php
 
-require_once 'get_about_me.php';
-require_once 'get_portfolio.php';
+require_once 'get_data.php';
+require_once 'get_data.php';
 
 ?>
 
 <html lang="en">
 <head>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script src="hamburger.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>
         Ariel's Portfolio
@@ -22,9 +26,17 @@ require_once 'get_portfolio.php';
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
-        <div class="hamburger"></div>
+        <div id="ham">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+        </div>
+        <div id="menu">
+            <li><a href="#home-content">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </div>
     </nav>
     <h1>Ariel Walker-Cochrane</h1>
     <h4>Trainee Software Programmer</h4>
@@ -69,5 +81,9 @@ require_once 'get_portfolio.php';
 
 <footer>&copy; Ariel Walker-Cochrane <a href="database_form.php">Login</a>
 </footer>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+<script src="hamburger.js"></script>
 
 </html>

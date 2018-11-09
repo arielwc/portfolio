@@ -38,8 +38,9 @@ function getProjects($db){
 }
 
 function deletePortfolioproject($db, $project_delete){
-    $query = $db->prepare("UPDATE `portfolio` SET `delete` = 1 WHERE `project_title` = :project_title;");
+    $query = $db->prepare("UPDATE `portfolio` SET `deleted` = 1 WHERE `project_title` =:project_title;");
 
     $query->bindParam(':project_title', $project_delete);
 
     return $query->execute();
+}
