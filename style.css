@@ -38,11 +38,6 @@ nav {
     z-index: 1;
 }
 
-ul {
-    font-family: monospace;
-    text-align: center;
-    padding: 1% 0% 0% 0%;
-}
 
 li {
     display: inline;
@@ -58,9 +53,25 @@ li {
     text-align: center;
 }
 
+#menu {
+    width: 200px;
+    height: 300px;
+    background-color: paleturquoise;
+    display: none;
+}
+
+#ham {
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px 10px;
+    display: block;
+}
+
 .hamburger {
     display: none;
 }
+
+
 @media only screen and (max-width: 600px) {
     ul {
         display: none;
@@ -74,7 +85,16 @@ li {
         margin: 8px 0px 0px 10px;
     }
 
+    .container {
+        width: 500px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
 }
+
 
 #about-me {
     overflow: auto;
@@ -132,6 +152,7 @@ li {
 }
 
 
+
 .card {
     float: left;
     width: 50%;
@@ -142,25 +163,3 @@ footer {
     height: 5%;
 }
 
-@media only screen and (max-width: 600px) {
-    ul {
-        display: none;
-    }
-
-    .hamburger {
-        display: block;
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 8px 0px 0px 10px;
-    }
-
-    .container {
-        width: 500px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-}
